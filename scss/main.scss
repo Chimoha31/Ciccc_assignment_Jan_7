@@ -1,5 +1,7 @@
-@import "base";
-@import "layout";
+@use "../scss/base";
+@use "../scss/layout";
+@use "../scss/components";
+@use "../scss/variables";
 
 * {
   margin: 0;
@@ -25,14 +27,6 @@ header {
     url(../images/bg.jpeg) center no-repeat;
   background-size: cover;
 
-  & .fas {
-    color: $color-primary;
-    font-size: 40px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
   & .brand {
     // border: 1px solid red;
     display: flex;
@@ -58,9 +52,7 @@ header {
         font-family: "Nunito", sans-serif;
         font-size: 50px;
         color: $color-secondary;
-        font-weight: 300;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+      @include textStyles();
       }
       & .sub-name {
         font-family: "Josefin Sans", sans-serif;
@@ -258,9 +250,7 @@ header {
 
 .footer {
   padding: 70px 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @include flexLayout();
   flex-direction: column;
 
   &-header {
@@ -280,9 +270,7 @@ header {
     & .sub-name {
       color: $color-secondary;
       font-family: "Nunito", sans-serif;
-      text-transform: uppercase;
-      font-weight: 300;
-      letter-spacing: 2px;
+      @include textStyles();
     }
 
     & .main-name {
