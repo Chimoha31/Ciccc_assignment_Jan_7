@@ -168,6 +168,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #262626;
 }
 
 header {
@@ -196,7 +202,7 @@ header {
 
 .header .brand .logo img {
   display: block;
-  border: 5px solid #ffd900;
+  border: 5px solid #d3ab55;
   border-radius: 50%;
   width: 110px;
   height: 110px;
@@ -278,7 +284,6 @@ header {
 }
 
 .about-us {
-  background-color: rgba(0, 0, 0, 0.822);
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,7 +367,171 @@ header {
   cursor: pointer;
 }
 
+.gallery .cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-overlay {
+  left: 0;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(211, 171, 85, 0.6);
+  color: #fff;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: left 0.7s;
+  transition: left 0.7s;
+}
+
+.card-overlay-heading {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.card-overlay-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
 .card-img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+
+.footer {
+  padding: 70px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer-header .logo {
+  margin-right: 10px;
+}
+
+.footer-header .logo img {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #d3ab55;
+  border-radius: 50%;
+}
+
+.footer-header .main-name,
+.footer-header .sub-name {
+  color: #bbb;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.footer-header .main-name {
+  font-size: 40px;
+}
+
+.footer-header .sub-name {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-social-media {
+  margin-bottom: 50px;
+}
+
+.footer-social-media .social-media {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-social-media .social-media-link {
+  color: #bbb;
+  font-size: 35px;
+}
+
+.footer-copyright-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  color: #bbb;
 }
 /*# sourceMappingURL=main.css.map */
