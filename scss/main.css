@@ -189,6 +189,15 @@ header {
   background-size: cover;
 }
 
+.header .fas {
+  color: #d3ab55;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 .header .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +224,6 @@ header {
 }
 
 .header .brand .letter01 .main-name {
-  font-size: 40px;
   font-family: "Nunito", sans-serif;
   font-size: 50px;
   color: #bbb;
@@ -245,7 +253,7 @@ header {
 .header-banner .main-heading {
   text-align: center;
   font-family: "Dancing Script", cursive;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 300;
   color: #d3ab55;
   margin-bottom: 40px;

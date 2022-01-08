@@ -24,6 +24,15 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url(../images/bg.jpeg) center no-repeat;
   background-size: cover;
+
+  & .fas {
+    color: $color-primary;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
   & .brand {
     // border: 1px solid red;
     display: flex;
@@ -31,6 +40,7 @@ header {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+
 
     & .logo img {
       display: block;
@@ -45,7 +55,6 @@ header {
       color: $color-white;
       margin-left: 1.8rem;
       & .main-name {
-        font-size: 40px;
         font-family: "Nunito", sans-serif;
         font-size: 50px;
         color: $color-secondary;
@@ -73,7 +82,7 @@ header {
     & .main-heading {
       text-align: center;
       font-family: "Dancing Script", cursive;
-      font-size: 60px;
+      font-size: 70px;
       font-weight: 300;
       color: $color-primary;
       margin-bottom: 40px;
